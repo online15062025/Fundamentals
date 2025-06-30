@@ -1635,28 +1635,34 @@
         let get_a_free_consultation = document.getElementById("get_a_free_consultation");
         let explore_our_work = document.getElementById("explore_our_work");
 
+        function redirect_whatsapp(){
+            let message = "Hello, I am interested in getting a free quote.";
+            let encodedMessage = encodeURIComponent(message);
+            location.href = `https://wa.me/8248992453?text=${encodedMessage}`;
+        }
+
         request_a_free_quote.addEventListener('click',()=>{
-            location.href = "https://wa.me/8248992453"
+            redirect_whatsapp();
         });
 
         get_a_free_consultation.addEventListener('click',()=>{
-            location.href = "https://wa.me/8248992453"
+            redirect_whatsapp();
         });
 
         explore_our_work.addEventListener('click',()=>{
-            location.href = "https://wa.me/8248992453"
+            redirect_whatsapp();
         });
 
         document.getElementById("get_a_free_quote1").addEventListener('click',()=>{
-            location.href = "https://wa.me/8248992453"
+            redirect_whatsapp();
         })
 
         document.getElementById("get_a_free_quote2").addEventListener('click',()=>{
-            location.href = "https://wa.me/8248992453"
+            redirect_whatsapp();
         })
 
         document.getElementById("get_a_free_quote3").addEventListener('click',()=>{
-            location.href = "https://wa.me/8248992453"
+            redirect_whatsapp();
         })
 
         // Feature card interactive effects
